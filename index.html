@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<!-- explicacion: lo primero que deben incluir dentro del documento html es el head, 
-dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras cosas -->
-
 <html lang="es">
+  <!-- explicacion: lo primero que deben incluir dentro del documento html es el head, 
+    dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras cosas -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +29,7 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
             <a class="enlaces__enlace" href="#presentacion">Inicio</a>
           </li>
           <li class="enlaces__item">
-            <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
+            <a class="enlaces__enlace" href="#sobre-mi">Sobre Mí</a>
           </li>
           <li class="enlaces__item">
             <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
@@ -49,9 +48,11 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
         <div class="presentacion__contenedor_info">
           <h1 class="presentacion__titulo">Soy Tester QA</h1>
           <p class="presentacion__parrafo">
-            Soy una entusiasta del testing y la calidad de software. Mi objetivo
-            es garantizar que las aplicaciones sean robustas, seguras y libres
-            de errores.
+            ¡Hola Soy Edith! una apasionada tester de software con experiencia
+            en la industria de desarrollo de aplicaciones. Mi pasión por la
+            tecnología y la calidad del software me ha llevado a embarcarme en
+            una carrera dedicada a asegurar que los productos digitales sean
+            confiable funcionales y fáciles de usar.
           </p>
           <div class="presentacion__contenedor_botones">
             <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
@@ -70,13 +71,13 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
       <!-- explicacion: Ahora agregaremos una seccion donde nos explayaremos 
         sobre nuestra historia personal, para ello escribiremos lo siguiente -->
       <article class="articulo sobre_mi" id="sobre-mi">
-        <h2 class="articulo__titulo">Un poco sobre Mí</h2>
+        <h2 class="articulo__titulo">Un poco sobre mí</h2>
         <div class="articulo__contenedor_descripciones">
           <section class="seccion_descripcion">
             <div class="seccion_descripcion__porta_retrato">
               <img
                 class="seccion_descripcion__imagen"
-                src="./assets/images/profile/trabajo2.jpg"
+                src="./img/Profile/office.png"
                 alt="foto trabajando en la oficina"
                 title="trabajando en la oficina"
               />
@@ -93,10 +94,13 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
                 aria-label="Detalles de mi historia"
                 aria-describedby="mi_historia_titulo"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
+                Comencé mi carrera como tester, enfocándome en la identificación
+                de errores y en la mejora de la calidad del software a través de
+                pruebas exhaustivas. Con el tiempo, mi interés por la
+                experiencia del usuario me llevó a adentrarme en el mundo del
+                diseño UX, donde aprendí a comprender las necesidades y deseos
+                de los usuarios para crear interfaces que sean efectivas,
+                accesibles y atractivas.
               </p>
               <p
                 class="seccion_descripcion__parrafo"
@@ -144,17 +148,38 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
           <!-- explicacion: seguidamente tendremos una seccion muy similar a la anterior 
             pero cambiaremos el orden de los elementos dejando la imagen al final -->
           <section class="seccion_descripcion">
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen"
+                width="250px"
+                height="250px"
+                src="./img/Profile/Trabajando en la oficina.jpg"
+                alt="foto mientras me encontraba en una reunion de trabajo"
+                title="selfie en una reunion"
+              />
+            </div>
             <div
               class="seccion_descripcion__info scroll scroll_fino scroll_gris"
               aria-label="descripcion personal"
             >
-              <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
-                Mis hobbies
+              <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                Mis Hobbies
               </h3>
               <p
                 class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mis hobbies"
-                aria-describedby="mis_hobbies_titulo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+                Una de mis grandes pasiones es la fotografía, ya que me encanta
+                capturar momentos especiales y paisajes impresionantes a través
+                de mi lente. Explorar nuevas técnicas y perspectivas
+                fotográficas es algo que me inspira y me ayuda a ver el mundo de
+                una manera diferente.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
@@ -163,40 +188,26 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
               </p>
               <p
                 class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mis hobbies"
-                aria-describedby="mis_hobbies_titulo"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis. Lorem ipsum
-                dolor sit, amet consectetur adipisicing elit. Molestiae dolorem
-                quasi atque deserunt odio, minima saepe delectus nemo
-                praesentium sapiente labore excepturi quos repellat non,
-                officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit,
-                amet consectetur adipisicing elit. Molestiae dolorem quasi atque
-                deserunt odio, minima saepe delectus nemo praesentium sapiente
-                labore excepturi quos repellat non, officiis, ea vero commodi
-                reiciendis.
-              </p>
-              <p
-                class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mis hobbies"
-                aria-describedby="mis_hobbies_titulo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
                 repellat non, officiis, ea vero commodi reiciendis.
               </p>
-            </div>
-            <div class="seccion_descripcion__porta_retrato">
-              <img
-                class="seccion_descripcion__imagen seccion_descripcion_imagen_variante"
-                src="./assets/images/profile/trabajo3.jpg"
-                alt="foto mientras me encontraba en una reunion de trabajo"
-                title="selfie en una reunion"
-              />
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+                En mi tiempo libre, me gusta participar en comunidades de
+                testing, asistir a conferencias y cursos de actualización, y
+                estar al tanto de las últimas tendencias en el mundo del testing
+                de software. Estoy siempre en busca de nuevos retos y
+                oportunidades para crecer profesionalmente en este apasionante
+                campo.
+              </p>
             </div>
           </section>
         </div>
@@ -215,7 +226,7 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
           >
             <img
               class="tarjeta__imagen"
-              src="./assets/images/proyectos/paisaje.jpg"
+              src="./img/Proyectos/Con Metodologías Ágiles.png"
               alt="imagen del proyecto"
               title="proyecto 1"
             />
@@ -245,12 +256,12 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
           >
             <img
               class="tarjeta__imagen"
-              src="./assets/images/proyectos/juegos.jpg"
+              src="./img/Proyectos/Tester QA.png"
               alt="imagen del proyecto"
               title="proyecto 2"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Título</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">titulo</h3>
               <span class="tarjeta__divisor"></span>
               <p
                 class="tarjeta__parrafo scroll scroll_fino scroll_gris"
@@ -271,12 +282,12 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
           >
             <img
               class="tarjeta__imagen"
-              src="./assets/images/proyectos/calendario.jpg"
+              src="./img/Proyectos/Testeando UI.png"
               alt="imagen del proyecto"
               title="proyecto 3"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">Título</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">título</h3>
               <span class="tarjeta__divisor"></span>
               <p
                 class="tarjeta__parrafo scroll scroll_fino"
@@ -304,7 +315,7 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
               title="proyecto 4"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_4">Título</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_4">titulo</h3>
               <span class="tarjeta__divisor"></span>
               <p
                 class="tarjeta__parrafo scroll scroll_fino scroll_gris"
@@ -330,7 +341,7 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
               title="proyecto 5"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_5">Título</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_5">titulo</h3>
               <span class="tarjeta__divisor"></span>
               <p
                 class="tarjeta__parrafo scroll scroll_fino"
@@ -358,7 +369,7 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
               title="proyecto 6"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_6">Título</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_6">titulo</h3>
               <span class="tarjeta__divisor"></span>
               <p
                 class="tarjeta__parrafo scroll scroll_fino scroll_gris"
@@ -391,11 +402,11 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
           <li class="enlaces__item">
             <a
               class="enlaces__enlace enlaces__enlace_footer"
-              href="https://github.com/RamaAlves"
+              href="https://github.com/edithel/edithbarrios.github.io"
               target="_blank"
               ><img
                 class="enlaces__icono"
-                src="./assets/images/logos/github-logo.png"
+                src="./img/Logos/github-logo.png"
                 alt="logo de github"
                 title="github"
             /></a>
@@ -403,12 +414,12 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
           <li class="enlaces__item">
             <a
               class="enlaces__enlace enlaces__enlace_footer"
-              href="https://www.instagram.com/ramiro_alves_/"
+              href="https://www.instagram.com/edithelbarrios"
               target="_blank"
             >
               <img
                 class="enlaces__icono"
-                src="./assets/images/logos/ig-logo.png"
+                src="./img/Logos/ig-logo.png"
                 alt="logo de instagram"
                 title="instagram"
               />
@@ -417,12 +428,12 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
           <li class="enlaces__item">
             <a
               class="enlaces__enlace enlaces__enlace_footer"
-              href="https://twitter.com/1394Alves"
+              href="https:/www.linkedin.com/in/edithelisabarrios"
               target="_blank"
               ><img
                 class="enlaces__icono"
-                src="./assets/images/logos/x-logo.png"
-                alt="logo de X"
+                src="./img/Logos/linkedin-logo.png"
+                alt="logo de In"
                 title="X"
             /></a>
           </li>
@@ -455,7 +466,7 @@ dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras
           </li>
           <li class="enlaces__item">
             <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
-              >Sobre Mí</a
+              >Sobre mi</a
             >
           </li>
           <li class="enlaces__item">

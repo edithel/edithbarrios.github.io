@@ -28,7 +28,6 @@ es muy comun declarar las variables a utilizar */
 /* luego estilos que normalizaran los elementos y se aplicaran a todos */
 /* estilos generales */
 * {
-  /* normalizador */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -39,8 +38,6 @@ es muy comun declarar las variables a utilizar */
   font-style: normal;
 }
 
-/* por ultimo unos detalles en el html y body para asegurarnos de que 
-todo quede listo para continuar los estilos */
 html {
   background-color: var(--fondo-primario);
 }
@@ -50,32 +47,7 @@ body {
 }
 
 /* aquí finalizamos este primer video tutorial sobre el proyecto optativo, 
-la semana que viene será el momento de comenzar a agregar mas estilos a la página */
-:root {
-  /* colors */
-  --texto-primario: #dddddd;
-  --texto-secundario: #d1d1d1;
-  --fondo-primario: #0f0921;
-  --fondo-primario-transparente: #0f092180;
-  --fondo-secundario: #0a0c13;
-  --color-primario: #2c2acb;
-  --color-primario-apagado: #2422a3;
-  --color-secundario: #9b70f9;
-  --color-terciario: #6f6f6f;
-
-  /* sizes */
-  --presentacion-titulo-tamanio: 4rem;
-  --presentacion-titulo-tamanio-grande: 3.4rem;
-  --presentacion-descripcion-tamanio: 1.2rem;
-  --titulo-tamanio: 3rem;
-  --sub-titulo-tamanio: 2rem;
-  --texto-tamanio: 1.1rem;
-  --enlaces-tamanio: 1.2rem;
-  --texto-peso-grueso: 700;
-  --texto-peso-regular: 400;
-  --texto-peso-fino: 300;
-}
-
+la semana que viene será el momento de comenzar a agregar mas estilos a la página *
 /* estilos generales */
 * {
   /* normalizador */
@@ -97,7 +69,7 @@ body {
   position: relative;
 }
 
-/* Hola, en este video continuaremos agregando estilos al proyecto. 
+/*  
 Para esto mismo deberemos utilizar las clases que utilizamos anteriormente en las etiquetas de html. 
 Comencemos siguiendo la estructura de nuestro documento html de arriba hacia abajo. Para facilitar esto
 escribamos la misma (comentarios: encabezado, principal, presentacion, articulo, seccion descripcion,
@@ -112,6 +84,7 @@ los escribiremos al final (comentarios: enlaces, botones, tarjetas) */
   left: 0;
   top: 0;
 }
+/*navegacion*/
 .navegacion {
   height: 80px;
   display: flex;
@@ -119,6 +92,7 @@ los escribiremos al final (comentarios: enlaces, botones, tarjetas) */
   align-items: center;
   background-color: transparent;
 }
+/*navegacion enlace*/
 .navegacion__enlace {
   text-decoration: none;
 }
@@ -369,6 +343,8 @@ los escribiremos al final (comentarios: enlaces, botones, tarjetas) */
 }
 
 .enlaces__icono {
+  width: 50px;
+  height: 50px;
 }
 .enlaces__icono:hover,
 .enlaces__icono:focus {
@@ -406,10 +382,10 @@ los escribiremos al final (comentarios: enlaces, botones, tarjetas) */
   background-color: var(--color-primario);
 }
 
-/* .boton_oscuro:hover {
+.boton_oscuro:hover {
   color: var(--texto-primario);
   background-color: var(--color-primario-apagado);
-} */
+}
 
 /* tarjetas */
 .contenedor_tarjetas_grid {
